@@ -1,0 +1,16 @@
+* {
+  font-family: Inter;
+}
+nav ul li:hover {
+  color: #252432;
+}
+.text-secondary {
+  color: #8987a1;
+}
+.noto-serif {
+  font-family: Noto Serif;
+}
+.colored-title {
+  font-family: Noto Serif;
+  color: #e95a08;
+}
