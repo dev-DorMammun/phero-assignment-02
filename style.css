@@ -7,6 +7,7 @@ nav ul li:hover {
 }
 .text-secondary {
   color: #8987a1;
+  font-size: 22px;
 }
 .noto-serif {
   font-family: Noto Serif;
@@ -20,8 +21,49 @@ nav ul li:hover {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.text-primary {
+  font-family: Noto Serif;
+  font-size: 3.75rem;
+  font-weight: 700;
+}
+.bloom,
+.ana {
+  height: 206px;
+}
+.zabo {
+  height: 100%;
+}
+.ana {
+  background: linear-gradient(#0000008a, #0000008a), url(assets/deal-ana.png);
+}
+.zabo {
+  background: linear-gradient(#0000008a, #0000008a), url(assets/deal-zabo.png);
+}
+.bloom {
+  background: linear-gradient(#0000008a, #0000008a), url(assets/deal-bloom.png);
+}
+.bloom,
+.ana,
+.zabo {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 14px;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (max-width: 640px) {
-  .trusted-img {
-    display: none;
+  .text-primary {
+    font-size: 24px;
+  }
+  .text-secondary {
+    font-size: 14px;
+  }
+  .bloom,
+  .ana,
+  .zabo {
+    height: 184px;
   }
 }
