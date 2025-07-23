@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flower Market</title>
+
+    <!-- CONNECTING TAILWIND -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- FONT LINKS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        font-family: Inter;
+      }
+      nav ul li:hover {
+        color: #252432;
+      }
+      .text-secondary {
+        color: #8987a1;
+      }
+      .noto-serif {
+        font-family: Noto Serif;
+      }
+      .colored-title {
+        font-family: Noto Serif;
+        color: #e95a08;
+      }
+    </style>
+  </head>
+  <body class="bg-[#F5F8FF] max-w-7xl mx-auto">
+    <nav
+      class="flex justify-around items-center mt-8 mb-9 sm:justify-between sm:mb-[300px]"
+    >
+      <div>
+        <img src="./assets/logo.png" alt="" class="w-16 sm:w-auto" />
+      </div>
+      <div class="flex gap-11 items-center font-semibold">
+        <div class="hidden sm:block">
+          <ul class="list-none gap-11 text-secondary cursor-pointer flex">
+            <li>Home</li>
+            <li>Shop</li>
+            <li>About Us</li>
+          </ul>
+        </div>
+        <div class="flex gap-2 cursor-pointer">
+          <img
+            src="./assets/shopping-cart.png"
+            alt=""
+            height="24px"
+            width="24px"
+          />
+          <p>Cart ($56)</p>
+        </div>
+      </div>
+    </nav>
+    <section class="flex flex-col-reverse gap-5 sm:flex-row items-end">
+      <div>
+        <h1
+          class="uppercase noto-serif text-[24px] font-bold mb-4 sm:text-[6xl]"
+        >
+          always <span class="colored-title">fresh flowers</span>
+        </h1>
+        <h3 class="text-[14px] text-secondary sm:text-[22px]">
+          Indulge your senses with the beauty and fragrance of our fresh flower
+          shop. From classic roses to exotic blooms, we offer a wide variety of
+          fresh flowers that are perfect for any occasion.
+        </h3>
+      </div>
+      <img src="./assets/hero-flower.png" alt="image of flowers" />
+      <div></div>
+    </section>
+  </body>
+</html>
