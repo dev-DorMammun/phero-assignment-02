@@ -2,6 +2,14 @@
   font-family: Inter;
   box-sizing: border-box;
 }
+.section {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+nav ul li {
+  font-size: 1rem;
+}
 nav ul li:hover {
   color: #252432;
 }
@@ -34,27 +42,39 @@ nav ul li:hover {
   height: 100%;
 }
 .ana {
-  background: linear-gradient(#0000008a, #0000008a), url(assets/deal-ana.png);
+  background: linear-gradient(#00000073, #00000073), url(assets/deal-ana.png);
 }
 .zabo {
-  background: linear-gradient(#0000008a, #0000008a), url(assets/deal-zabo.png);
+  background: linear-gradient(#00000073, #00000073), url(assets/deal-zabo.png);
 }
 .bloom {
-  background: linear-gradient(#0000008a, #0000008a), url(assets/deal-bloom.png);
+  background: linear-gradient(#00000073, #00000073), url(assets/deal-bloom.png);
 }
 .bloom,
 .ana,
-.zabo {
+.zabo,
+.email {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 14px;
   background-position: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+.email {
+  border-radius: 0;
+  background: url(assets/news-letter-bg.png);
+  background-size: cover;
+  box-sizing: content-box;
+}
 
 @media screen and (max-width: 640px) {
+  .section {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
   .text-primary {
     font-size: 24px;
   }

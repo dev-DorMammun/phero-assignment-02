@@ -17,8 +17,8 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="bg-[#F5F8FF] mx-5 sm:mx-auto max-w-7xl">
-    <nav class="flex justify-between items-center mt-8 mb-9 sm:mb-[150px]">
+  <body class="bg-[#F5F8FF]">
+    <nav class="section flex justify-between items-center mt-8 sm:mb-[150px]">
       <div>
         <img src="./assets/logo.png" alt="" class="w-16 sm:w-auto" />
       </div>
@@ -43,7 +43,7 @@
     </nav>
 
     <section
-      class="flex flex-col-reverse gap-5 mb-[80px] sm:flex-row items-end sm:mb-[150px]"
+      class="section flex flex-col-reverse gap-5 mb-[80px] sm:flex-row items-end sm:mb-[150px]"
     >
       <div>
         <h1 class="uppercase text-primary mb-4">
@@ -59,7 +59,7 @@
       <div></div>
     </section>
 
-    <section class="text-center mb-[80px] sm:mb-[150px]">
+    <section class="section text-center mb-[80px] sm:mb-[150px]">
       <h1 class="mb-5 text-primary">
         <span class="colored-title">Our</span> Plants
       </h1>
@@ -169,7 +169,7 @@
     </section>
 
     <section
-      class="flex flex-col sm:flex-row sm:grid sm:grid-cols-2 sm:gap-[150px] items-center mb-[80px] sm:mb-[150px]"
+      class="section flex flex-col sm:flex-row sm:grid sm:grid-cols-2 sm:gap-[150px] items-center mb-[80px] sm:mb-[150px]"
     >
       <div class="relative">
         <img
@@ -207,7 +207,7 @@
       </div>
     </section>
 
-    <section class="text-center">
+    <section class="section text-center mb-[80px] sm:mb-[150px]">
       <h1 class="text-primary mb-5">
         <span class="colored-title">Latest</span> Deals
       </h1>
@@ -218,12 +218,47 @@
       </h3>
       <div class="grid grid-cols-1 gap-[25px] text-white sm:grid-cols-3">
         <div class="flex flex-col gap-[25px]">
-          <div class="bloom">30% Off | Ana Plant</div>
-          <div class="ana">30% Off | Ana Plant</div>
+          <div class="bloom">
+            <h1 class="noto-serif font-bold text-[20px]">
+              60% Off | Bloom Plant
+            </h1>
+            <h1 class="underline font-semibold">Shop Now</h1>
+          </div>
+          <div class="ana">
+            <h1 class="noto-serif font-bold text-[20px]">
+              30% Off | Ana Plant
+            </h1>
+            <h1 class="underline font-semibold">Shop Now</h1>
+          </div>
         </div>
         <div class="sm:col-span-2">
-          <div class="zabo">25% Off | Zabo Plant</div>
+          <div class="zabo">
+            <h1 class="noto-serif font-bold text-[20px] sm:text-[40px]">
+              30% Off | Ana Plant
+            </h1>
+            <h1 class="underline font-semibold sm:text-[26px]">Shop Now</h1>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <section
+      class="email mb-[80px] flex flex-col justify-center items-center h-[275px] w-[100vw] sm:mb-[150px] sm:h-[700px]"
+    >
+      <div class="text-primary text-white mb-6">Join the colorful Bunch</div>
+      <div class="flex justify-center items-center sm:w-[800px]">
+        <input
+          type="text"
+          name=""
+          placeholder="Enter Email"
+          id=""
+          class="bg-white border-none p-[15px] sm:w-8/10"
+        />
+        <button
+          class="bg-[#e95a08] flex h-full justify-center items-center text-white font-semibold px-[20px] sm:w-2/10"
+        >
+          Subscribe
+        </button>
       </div>
     </section>
   </body>
